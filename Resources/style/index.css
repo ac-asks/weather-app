@@ -105,7 +105,7 @@ table {
 	transition: 0s;
 }
 
-/* ================================ General used Classes ================================ */
+/* ================================ Generally used Classes ================================ */
 
 .center {
     position: absolute;
@@ -140,6 +140,58 @@ table {
 
 .icon-sm-30 { /* defaults icons to 28 pixels */
     width: 30px;
+}
+
+.flex-container{
+    display: flex;
+    width: 100%;
+}
+
+.flex-container > *{ /* select all and make all children inherit this using > * */
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0; /* same as flex 1 1 0 */
+
+}
+
+#temperature-summary-container {
+    align-items: center;
+}
+
+#temperature-summary-container>div:nth-child(2){
+    /* select the container, then direct child with the div tag, then from all of these leaves, select
+    the second one */
+    text-align: center;
+
+}
+
+/* humidity section */
+#humidity-wind-container {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    text-align: center;
+}
+
+#humidity-wind-container>div img {
+    vertical-align: middle;
+    position: relative;
+    top: -3px;
+    margin-right: 5px;
+}
+
+#humidity-wind-container>div span {
+    font-size: 18px;
+}
+
+/* the font */
+#degrees-label {
+    font-size: 60px;
+    font-weight: 900;
+}
+
+#summary-label{
+    font-size: 30px;
 }
 
 /* ================================ Menu Button================================= */

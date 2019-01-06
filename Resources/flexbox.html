@@ -1,0 +1,58 @@
+<!-- Flexbox makes it easier to create responsive layout because we don't
+need to use float or position anymore -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .flex-container{ /* learning flexbox container */
+            background-color: rgb(218, 42, 42);
+            padding: 15px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap; /* will not resize, but will go beneath the other elements */
+            /* aligns items horizontally */
+            justify-content: space-between; /* can set where the contents are e.g. space-around, space-between*/
+            height: 500px;
+            align-items: flex-end; /* aligns items vertically */
+        }
+
+        .flex-container div{
+            background-color: #eee;
+            width: 200px;
+            height: 100px;
+        }
+        
+        /* decide what everything else should be relative to other objects */
+        #chl1 {
+            flex-grow: 1;
+            background-color: red;
+        }
+
+        #chl2 {
+            flex-grow: 2;
+            background-color: blue;
+        }
+
+        #temperature-summary-container {
+            align-items: center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="flex-container">
+        <div id="chl1">1</div>
+        <div id="chl2">2</div>
+        <div id="chl3">3</div>
+    </div>
+</body>
+
+</html>
