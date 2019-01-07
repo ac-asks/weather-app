@@ -42,20 +42,103 @@
                     <h1 id="degrees-label">20&#176;</h1>
                     <p id="summary-label">Clear Day</p> 
                 </div>
-
             </div>
 
             <div class="flex-container" id="humidity-wind-container">
                 <div>
-                        <img class="icon-sm-30" src="./assets/images/icons/humidity.png" alt="Summary Icon">
+                        <img class="icon-sm-30" src="./assets/images/icons/humidity.png" alt="humidity">
                         <span>20%</span>
                 </div>
 
                 <div>
-                    <img class="icon-sm-30" src="./assets/images/icons/wind-speed-flag.png" alt="Summary Icon">
+                    <img class="icon-sm-30" src="./assets/images/icons/wind-speed-flag.png" alt="humidity">
                     <span>3km/h</span>
                 </div>
+            </div>
 
+        </section>
+
+        <!-- lower panel -->
+        <section class="lower-panel">
+
+            <button id="toggle-hourly-weather" class="ripple center_x">
+                <img src="./assets/images/icons/up-arrow.png" alt="">
+            </button>
+
+            <!-- Daily Weather -->
+            <div id="daily-weather-wrapper" class="lower-panel-body">
+
+                <div class="flex-container weather-box">
+                    <div>
+                        <h1>Sunday</h1>
+                    </div>
+
+                    <div class="flex-container">
+                        <div>
+                            <p>18&#176;</p>
+                        </div>
+                        
+                        <div>
+                            <img class ="icon-sm-30" src="./assets/images/summary-icons/clear-day-white.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hourly Weather -->
+            <div id="hourly-weather-wrapper" class="lower-panel-body">
+
+                    <div class="flex-container weather-box">
+                        <div>
+                            <h1>15:00</h1>
+                        </div>
+    
+                        <div class="flex-container">
+                            <div>
+                                <p>18&#176;</p>
+                            </div>
+                            
+                            <div>
+                                <img class ="icon-sm-30" src="./assets/images/summary-icons/clear-day-grey.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Menu Container -->
+        <section id="menu-container">
+            <button id="close-menu-btn" class="ripple">
+                &#10006;
+            </button>
+
+            <!-- container -->
+            <div>
+                <!-- Add location-->
+                <div id="add-location-wrapper">
+                    <input type="text" placeholder="Location" id="location-input">
+                    <br></br>
+                    <button class="ripple disabled" id="add-city-btn"> Add City</button>
+                    <h1 class="location-label">Brasov</h1>
+                </div>
+
+                <!-- Saved cities -->
+                <div id="saved-cities-wrapper">
+                    <div class="flex-container saved-city-box">
+
+                        <div class="ripple">
+                            <h1>Brasov</h1>
+                        </div>
+                        <div>
+                            <button class="ripple remove-saved-city"></button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            
         </section>
 
     </main>
