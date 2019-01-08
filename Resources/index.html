@@ -31,28 +31,28 @@
 
         <!-- current weather section -->
         <section id="current-day-weather-container">
-            <h1 class="location-label">Brasov</h1>
+            <h1 class="location-label"></h1>
             
             <div class="flex-container" id="temperature-summary-container">
                 <div>
-                    <img src="./assets/images/summary-icons/clear-day-white.png" alt="Summary Icon">
+                    <img src="./assets/images/summary-icons/clear-day-white.png" alt="Summary Icon" id = "currentlyIcon">
                 </div>
                 
                 <div>
-                    <h1 id="degrees-label">20&#176;</h1>
-                    <p id="summary-label">Clear Day</p> 
+                    <h1 id="degrees-label"><!--20&#176;--></h1>
+                    <p id="summary-label"><!--Clear Day--></p> 
                 </div>
             </div>
 
             <div class="flex-container" id="humidity-wind-container">
                 <div>
                         <img class="icon-sm-30" src="./assets/images/icons/humidity.png" alt="humidity">
-                        <span>20%</span>
+                        <span id="humidity-label"><!--20%--></span>
                 </div>
 
                 <div>
                     <img class="icon-sm-30" src="./assets/images/icons/wind-speed-flag.png" alt="humidity">
-                    <span>3km/h</span>
+                    <span id="wind-speed-label"><!--3km/h--></span>
                 </div>
             </div>
 
@@ -68,7 +68,7 @@
             <!-- Daily Weather -->
             <div id="daily-weather-wrapper" class="lower-panel-body">
 
-                <div class="flex-container weather-box">
+                <div class="flex-container weather-box display-none">
                     <div>
                         <h1>Sunday</h1>
                     </div>
@@ -88,7 +88,7 @@
             <!-- Hourly Weather -->
             <div id="hourly-weather-wrapper" class="lower-panel-body" visible="false">
 
-                    <div class="flex-container weather-box">
+                    <div class="flex-container weather-box display-none">
                         <div>
                             <h1>15:00</h1>
                         </div>
@@ -119,7 +119,7 @@
                     <input type="text" placeholder="Location" id="location-input">
                     <br></br>
                     <button class="ripple disabled" id="add-city-btn"> Add City</button>
-                    <h1 class="location-label">Brasov</h1>
+                    <h1 class="location-label"></h1>
                 </div>
 
                 <!-- Saved cities -->
@@ -127,7 +127,7 @@
                     <div class="flex-container saved-city-box">
 
                         <div class="ripple">
-                            <h1>Brasov</h1>
+                            <h1></h1>
                         </div>
                         <div>
                             <button class="ripple remove-saved-city"></button>
