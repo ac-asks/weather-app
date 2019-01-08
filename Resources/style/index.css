@@ -289,6 +289,11 @@ button {
     transform: translate(-50%, -50%);
 }
 
+/* this rotates the arrow when you click it */
+#toggle-hourly-weather img{
+    transition: transform .5s;
+}
+
 .weather-box > div:last-child{
     text-align: right;
 }
@@ -316,6 +321,7 @@ button {
 
 #daily-weather-wrapper {
     background-color: rgba(000,000,000,.6);
+    transition: opacity .5s;
 }
 
 
